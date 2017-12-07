@@ -61,7 +61,7 @@ gen_x86_64() {
 	gen_x86_64_only
 
 	echo 'TARGET_2ND_ARCH := x86'
-	echo 'TARGET_2ND_ARCH_VARIANT := x86_64'
+	echo 'TARGET_2ND_ARCH_VARIANT := x86'
 	echo 'TARGET_2ND_CPU_ABI := x86'
 }
 

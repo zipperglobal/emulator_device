@@ -77,3 +77,8 @@ DEVICE_PACKAGE_OVERLAYS += $(foreach dir,$(subdirs-true), $(LOCAL_PATH)/$(dir)/o
 PRODUCT_COPY_FILES += $(PRODUCT_COPY_FILES-true)
 PRODUCT_PROPERTY_OVERRIDES += $(PRODUCT_PROPERTY_OVERRIDES-true)
 PRODUCT_PACKAGES += $(PRODUCT_PACKAGES-true)
+
+# Get the hardware acceleration libraries
+$(call inherit-product-if-exists,$(LOCAL_PATH)/gpu/gpu_mesa.mk)
+
+

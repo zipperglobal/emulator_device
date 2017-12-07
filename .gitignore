@@ -1,5 +1,3 @@
-.config*
-config.mk
 linaro_*
 include/
 scripts/basic/.*
